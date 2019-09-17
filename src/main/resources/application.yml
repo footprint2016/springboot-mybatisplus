@@ -1,0 +1,21 @@
+server:
+  port: 7600
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cloud?allowMultiQueries=true&useUnicode=true&autoReconnect=true&failOverReadOnly=false&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+
+# mybatis-plus
+mybatis-plus:
+  mapper-locations: com.example.demo.dao.mapper/*Mapper.xml
+  type-aliases-package: com.example.demo.model.po
+
+# log
+logging:
+  level:
+    com.example.demo: DEBUG
+  file: D:\logs\demo.log
+
